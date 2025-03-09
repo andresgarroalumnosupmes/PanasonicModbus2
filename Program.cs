@@ -25,9 +25,9 @@ class Program
                     int[] registers = modbusClient.ReadInputRegisters(startAddress, 1); // Reading 1 register
 
                     Console.WriteLine($"Date Time: {DateTime.Now} - Value of Register {startAddress}: {registers[0]}");
-                    Console.WriteLine($"Time sleep 3s. Tres segundos");
-                    // wait for 3 seconds before the next reading 
-                    Thread.Sleep(3000);
+                    Console.WriteLine($"Time sleep 4s. Cuatro segundos");
+                    // wait for 4 seconds before the next reading 
+                    Thread.Sleep(4000);
                 }
         }
         catch (Exception ex)
